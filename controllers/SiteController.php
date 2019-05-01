@@ -125,4 +125,9 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionHello(){
+        $text= 'Hello World!';
+        return $this->render('hello', array('text' => $text));
+    }
 }
